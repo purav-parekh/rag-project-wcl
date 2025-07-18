@@ -19,8 +19,8 @@ qa = RetrievalQA.from_chain_type(
     retriever=vectorstore.as_retriever(),
 )
 
-res = qa.invoke("What is the time limit for each over bowled?")
-print(res)
+# res = qa.invoke("What is the time limit for each over bowled?")
+# print(res)
 
-res = qa.invoke("What are the playing conditions for the toss?")
+res = qa.invoke("What are the differences in the playing conditions for 20 overs vs 40 overs? Can you only elaborate on the differences?")
 print(res)
